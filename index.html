@@ -94,6 +94,33 @@
     .box-link {
       cursor:pointer;
       position:relative;
+      background:url('imagem/04.jpg.jpeg') center/cover no-repeat;
+      color:#fff;
+      min-height:320px;
+      display:flex;
+      align-items:flex-end;
+      padding:20px;
+      overflow:hidden;
+      border-radius:15px;
+      background-blend-mode:soft-light;
+      box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    .box-link::before {
+      content:'';
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.55) 100%);
+      pointer-events:none;
+    }
+
+    .box-link span {
+      position:relative;
+      z-index:1;
+      font-size:24px;
+      line-height:1.2;
+      font-weight:700;
+      max-width:80%;
     }
 
     .box-link::after {
@@ -102,11 +129,12 @@
       bottom:15px;
       right:15px;
       font-size:12px;
-      color:var(--secundaria);
-      background:#fff;
-      padding:4px 8px;
+      color:#fff;
+      background:rgba(0,0,0,0.65);
+      padding:6px 10px;
       border-radius:12px;
       box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      z-index:1;
     }
 
     .lightbox {
@@ -220,7 +248,7 @@
 <section id="momentos">
   <h2>Momentos Especiais</h2>
   <div class="grid">
-      <div class="box box-link" data-image="imagem/04.jpg.jpeg">Deus & Elas Responde</div>
+      <div class="box box-link" data-image="imagem/04.jpg.jpeg"><span>Deus & Elas Responde</span></div>
       <div class="box">Deus & Elas Sincerona</div>
       <div class="box">Entrega de Cartas</div>
     </div>
