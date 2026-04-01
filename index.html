@@ -25,29 +25,31 @@
     }
 
     header {
-      background:linear-gradient(rgba(181,82,44,0.9), rgba(142,63,34,0.9)), url('https://images.unsplash.com/photo-1520975922329-2f4b3b4a6c5a');
+      background:linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('imagem/01.jpg.jpeg');
       background-size:cover;
       background-position:center;
-      padding:80px 20px;
+      padding:120px 20px;
       text-align:center;
       color:#fff;
-    }
-
-    header img{
-      width:120px;
-      margin-bottom:20px;
+      min-height:520px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
     }
 
     header h1 {
       font-family:'Playfair Display', serif;
-      font-size:48px;
-      margin:10px 0;
+      font-size:56px;
+      margin:0 0 15px;
+      text-shadow:0 4px 20px rgba(0,0,0,0.35);
     }
 
     header p {
-      font-size:20px;
-      max-width:600px;
-      margin:auto;
+      font-size:22px;
+      max-width:760px;
+      margin:0 auto 20px;
+      line-height:1.6;
+      text-shadow:0 4px 20px rgba(0,0,0,0.35);
     }
 
     nav {
@@ -111,22 +113,10 @@
     }
 
     footer {
-      background:#fff;
-      color:var(--texto);
-      text-align:center;
-      padding:0;
-    }
-
-    .footer-banner {
-      width:100%;
-      height:200px;
-      background:url('imagem/01.jpg.jpeg') center/cover no-repeat;
-    }
-
-    .footer-text {
       background:var(--secundaria);
       color:#fff;
-      padding:20px;
+      text-align:center;
+      padding:25px 20px;
     }
 
   </style>
@@ -134,11 +124,11 @@
 <body>
 
 <header>
-  <!-- COLOQUE A SUA LOGO AQUI -->
-  <img src="imagem/01.jpg.jpeg" alt="Deus & Elas">
-  <h1>Deus & Elas</h1>
-  <p>Mais que um encontro, um mover espiritual que desperta, fortalece e transforma mulheres.</p>
-  <a href="#contato" class="btn">Quero Participar</a>
+  <div>
+    <h1>Deus & Elas</h1>
+    <p>Mais que um encontro, um mover espiritual que desperta, fortalece e transforma mulheres, em um ambiente acolhedor e cheio de propósito.</p>
+    <a href="#contato" class="btn">Quero Participar</a>
+  </div>
 </header>
 
 <nav>
@@ -199,10 +189,7 @@
 </section>
 
 <footer>
-  <div class="footer-banner"></div>
-  <div class="footer-text">
-    <p>© 2026 Deus & Elas - Todos os direitos reservados</p>
-  </div>
+  <p>© 2026 Deus & Elas - Todos os direitos reservados</p>
 </footer>
 
 </body>
