@@ -87,6 +87,24 @@
       transition:0.3s;
     }
 
+    .section-image-link {
+      display:block;
+      width:100%;
+      margin:20px auto 30px;
+      max-width:1000px;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 20px 50px rgba(0,0,0,0.15);
+      text-decoration:none;
+    }
+
+    .section-image-link img {
+      display:block;
+      width:100%;
+      height:auto;
+      object-fit:cover;
+    }
+
     .box:hover {
       transform:translateY(-5px);
     }
@@ -241,6 +259,9 @@
 
 <section id="sobre">
   <h2>Sobre o Deus & Elas</h2>
+  <a href="#contato" class="section-image-link">
+    <img src="imagem/02.jpg.jpeg" alt="Sobre o Deus & Elas">
+  </a>
   <div class="box">
     O Deus & Elas é um projeto que resgata a identidade da mulher cristã, fundamentado na cultura do Céu e nos princípios eternos do Evangelho.
   </div>
