@@ -294,18 +294,18 @@
 </div>
 
 <script>
-  const trigger = document.querySelector('.box-link');
+  const triggers = document.querySelectorAll('.box-link');
   const lightbox = document.getElementById('lightbox');
   const lightboxImage = document.getElementById('lightboxImage');
   const lightboxClose = document.getElementById('lightboxClose');
 
-  if (trigger) {
+  triggers.forEach((trigger) => {
     trigger.addEventListener('click', () => {
       lightboxImage.src = trigger.dataset.image;
       lightbox.classList.add('active');
       document.body.style.overflow = 'hidden';
     });
-  }
+  });
 
   const closeLightbox = () => {
     lightbox.classList.remove('active');
